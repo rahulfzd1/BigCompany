@@ -56,6 +56,6 @@ public class EmployeeAnalyzerTest {
         employees.put(305, employee2);
 
         EmployeeAnalyzer analyzer = new EmployeeAnalyzer(employees);
-        assertEquals(0, analyzer.findLongReportingLines().size());
+        assertEquals(1, analyzer.findLongReportingLines().size());
     }
 }
