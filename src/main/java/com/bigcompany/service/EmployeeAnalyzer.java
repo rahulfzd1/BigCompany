@@ -46,7 +46,7 @@ public class EmployeeAnalyzer {
 
         for (Employee employee : employees.values()) {
             int depth = getReportingDepth(employee);
-            if (depth > 4) {
+            if (depth > 2) {
                 results.add(employee.getFirstName() + " " + employee.getLastName() +
                         " has a reporting line of " + depth + " levels.");
             }
